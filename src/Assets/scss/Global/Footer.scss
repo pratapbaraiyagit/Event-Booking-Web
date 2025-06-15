@@ -1,0 +1,112 @@
+footer {
+  background: #000 url(../../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 30px;
+  .social_icon {
+    margin: 0 0 30px;
+    ul li a i {
+      color: #7d7d7d;
+    }
+  }
+  .footer_link {
+    ul {
+      li {
+        padding: 0 0 0.25em 0;
+        a {
+          color: #7d7d7d;
+          border-bottom: none;
+          display: inline-flex;
+          align-items: center;
+          i {
+            color: $primary;
+            margin-right: 5px;
+          }
+          &:hover {
+            color: $primary;
+          }
+        }
+        p {
+          margin: 0;
+          color: #7d7d7d;
+        }
+      }
+    }
+    &.info_link_wrapper{
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+          width: 50%;
+        }
+      }
+    }
+  }
+  .copyright_wrap {
+    padding: 30px 0;
+    border-top: 1px solid #7d7d7d;
+    .footer_logo {
+      img {
+        padding-left: 40px;
+      }
+    }
+    .copyright_text {
+      p {
+        font-size: 0.8em;
+        color: #666;
+        line-height: 18px;
+      }
+    }
+  }
+  .right_social_icon {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 9;
+    ul {
+      width: 60px;
+      text-align: right;
+      li {
+        a {
+          background: $primary;
+          color: #fff;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 10px;
+          margin-left: auto;
+          i {
+            font-size: 30px;
+          }
+          &:hover {
+            padding-right: 20px;
+            width: 60px;
+          }
+        }
+        &.facebook {
+          a {
+            background: #3b5998;
+          }
+        }
+        &.instagram {
+          a {
+            background: #c32aa3;
+          }
+        }
+        &.twitter {
+          a {
+            background: #1da1f2;
+          }
+        }
+        &.linkedin {
+          a {
+            background: #0a66c2;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProSemiBold.eot');
+  src: local('Sofia Pro Semi Bold'), local('SofiaProSemiBold'),
+    url('../../fonts/SofiaProSemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProSemiBold.woff2') format('woff2'),
+    url('../../fonts/SofiaProSemiBold.woff') format('woff'),
+    url('../../fonts/SofiaProSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProLight.eot');
+  src: local('Sofia Pro Light'), local('SofiaProLight'),
+    url('../../fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProLight.woff2') format('woff2'),
+    url('../../fonts/SofiaProLight.woff') format('woff'),
+    url('../../fonts/SofiaProLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProExtraLight.eot');
+  src: local('Sofia Pro ExtraLight'), local('SofiaProExtraLight'),
+    url('../../fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProExtraLight.woff2') format('woff2'),
+    url('../../fonts/SofiaProExtraLight.woff') format('woff'),
+    url('../../fonts/SofiaProExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProRegular.eot');
+  src: local('Sofia Pro Regular'), local('SofiaProRegular'),
+    url('../../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProRegular.woff2') format('woff2'),
+    url('../../fonts/SofiaProRegular.woff') format('woff'),
+    url('../../fonts/SofiaProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProMedium.eot');
+  src: local('Sofia Pro Medium'), local('SofiaProMedium'),
+    url('../../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProMedium.woff2') format('woff2'),
+    url('../../fonts/SofiaProMedium.woff') format('woff'),
+    url('../../fonts/SofiaProMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProBold.eot');
+  src: local('Sofia Pro Bold'), local('SofiaProBold'),
+    url('../../fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProBold.woff2') format('woff2'),
+    url('../../fonts/SofiaProBold.woff') format('woff'),
+    url('../../fonts/SofiaProBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProBlack.eot');
+  src: local('Sofia Pro Black'), local('SofiaProBlack'),
+    url('../../fonts/SofiaProBlack.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProBlack.woff2') format('woff2'),
+    url('../../fonts/SofiaProBlack.woff') format('woff'),
+    url('../../fonts/SofiaProBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../../fonts/SofiaProUltraLight.eot');
+  src: local('Sofia Pro UltraLight'), local('SofiaProUltraLight'),
+    url('../../fonts/SofiaProUltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SofiaProUltraLight.woff2') format('woff2'),
+    url('../../fonts/SofiaProUltraLight.woff') format('woff'),
+    url('../../fonts/SofiaProUltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+$primary: #ea345f;
+$primaryGradient: linear-gradient(to bottom, #e92b86 0%, #ec4324 100%);
+$blueGradient: linear-gradient(to bottom, #030118 0%, #06072a 100%);
+$orangeGradient: linear-gradient(to bottom, #ec3f38, #ec4324);
+$grayGradient: linear-gradient(#404448, #4e5458 40%, #53595d);
+$orange: #ec4324;
+$textWhite: #eeeeee;
+$bgWhite: #ffffff;
+$textBlack: #000000;
+$bgBlack: #000000;
+$textGray: #7d7d7d;
+$sifiaPro: 'Sofia Pro';
+$sourceSans: 'Source Sans Pro';
+
+::-moz-selection {
+  background: $primary;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: $primary;
+  color: #fff;
+}
+::selection {
+  background: $primary;
+  color: #fff;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  // -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: #eeeeee;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #eeeeee;
+  margin: 0 0 15px;
+}
+
+p.big {
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: 500;
+  color: $textWhite;
+  font-family: 'Sofia Pro';
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $orange;
+}
+
+img {
+  max-width: 100%;
+}
+
+body.modal_open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sofia Pro';
+}
+
+h1,
+.h1 {
+  font-size: 70px;
+  line-height: 84px;
+  color: $textWhite;
+  font-weight: 900;
+}
+
+h2,
+.h2 {
+  font-size: 42px;
+  line-height: 50px;
+  color: $textWhite;
+  font-weight: 900;
+}
+h3,
+.h3 {
+  font-size: 28px;
+  line-height: 31px;
+  color: $textWhite;
+  font-weight: 900;
+}
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 24px;
+  color: $textWhite;
+  font-weight: 600;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  line-height: 22px;
+  color: $textWhite;
+  font-weight: 600;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  line-height: 20px;
+  color: $textWhite;
+  font-weight: 600;
+}
+
+.fw_900 {
+  font-weight: 900;
+}
+.fw_700 {
+  font-weight: 700;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_400 {
+  font-weight: 400;
+}
+.fw_300 {
+  font-weight: 300;
+}
+
+.text_light {
+  color: $textGray;
+}
+.text_dark {
+  color: $textBlack;
+}
+.text_primary {
+  color: $primary;
+}
+.text_orange {
+  color: $orange !important;
+}
+
+.text_small {
+  font-size: 80%;
+}
+.text_big {
+  font-size: 120%;
+}
+
+.bg_primary {
+  background: $primary !important;
+}
+.bg_grey {
+  background: $textGray;
+}
+.text_white {
+  color: $bgWhite;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+.pb-120 {
+  padding-bottom: 120px;
+}
+.pt-80 {
+  padding-top: 80px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
